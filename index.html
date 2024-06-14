@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" novalidate>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+          <span class="error-message" id="email-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="country">Country</label>
+          <input type="text" id="country" required />
+          <span class="error-message" id="country-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip" required />
+          <span class="error-message" id="zip-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" required />
+          <span class="error-message" id="password-error"></span>
+        </div>
+        <div class="form-group">
+          <label for="password-confirmation">Confirm Password</label>
+          <input type="password" id="password-confirmation" required />
+          <span class="error-message" id="password-confirmation-error"></span>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+        <span id="submit-message"></span>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
